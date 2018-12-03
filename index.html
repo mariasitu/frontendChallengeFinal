@@ -1,1 +1,187 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BusyBus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://use.fontawesome.com/37471687aa.js"></script> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" -->
+      <!-- rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- <script src="scripts.js"></script> -->
+  </head>
+
+  <body>
+
+    <section class="container">
+
+      <section class="status-bar">
+        <div class="wifi-icon">
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="reception-icon">
+          <i class="fas fa-signal"></i>
+        </div>
+        <div class="battery-icon">
+          <i class="fas fa-battery-full"></i>
+        </div>
+        <div class="time">
+          <span><h4>12:30</h4></span>
+        </div>
+      </section>
+
+
+      <section class="nav">
+        <div class="arrow-left">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7H3.8L9.4 1.4L8 0L0 8L8 16L9.4 14.6L3.8 9H16V7Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="departure-times">
+          <span><h1>Departure Times</h1></span>
+        </div>
+        <div class="refresh-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C11.7 16 14.8 13.4 16 10H14C12.8 12.3 10.6 14 8 14C4.7 14 2 11.3 2 8C2 4.7 4.7 2 8 2C9.7 2 11.1 2.7 12 4L9 7H16V0L14 2C12.2 1 10.2 0 8 0Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="menu-icon">
+          <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z" fill="white"/>
+          </svg>
+        </div>
+      </section>
+
+
+      <section class="stop-location">
+        <div class="location-icon">
+          <svg width="15" height="22" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 0C3.32143 0 0 3.41 0 7.7C0 13.42 7.5 22 7.5 22C7.5 22 15 13.53 15 7.7C15 3.41 11.6786 0 7.5 0ZM7.49995 10.45C5.99995 10.45 4.82138 9.24001 4.82138 7.70001C4.82138 6.16001 5.99995 4.95001 7.49995 4.95001C8.99995 4.95001 10.1785 6.16001 10.1785 7.70001C10.1785 9.24001 8.99995 10.45 7.49995 10.45Z" fill="#212121" fill-opacity="0.87"/>
+          </svg>
+        </div>
+        <span class="washington-state"><h1>Washington/State</h1></span>
+        <div class="fav-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11Z" fill="#FBBC05"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9588 19.0357C15.8247 19.0357 15.691 18.9952 15.5772 18.9142L11.0001 15.6675L6.42294 18.9142C6.19344 19.0769 5.88486 19.0762 5.65633 18.912C5.42779 18.7477 5.33169 18.4575 5.41719 18.1913L7.12429 12.882L2.58829 9.57899C2.36072 9.41345 2.26622 9.12224 2.35333 8.85706C2.44076 8.59156 2.69019 8.4302 2.9724 8.4286H8.60479L10.3784 3.08678C10.4671 2.8216 10.7179 2.64288 11.0001 2.64288C11.2823 2.64288 11.5327 2.8216 11.6217 3.08678L13.3954 8.4286H19.0274C19.3096 8.4302 19.5591 8.59156 19.6465 8.85706C19.7336 9.12224 19.6391 9.41345 19.4119 9.57899L14.8755 12.882L16.5827 18.1913C16.6685 18.4575 16.572 18.7477 16.3438 18.912C16.2291 18.9946 16.0938 19.0357 15.9588 19.0357" fill="white"/>
+          </svg>
+        </div>
+      </section>
+
+
+      <section class="tabs">
+        <div class="departures-tab">
+          <span><h2>Departures</h2></span>
+        </div>
+        <div class="stop-info-tab">
+          <span><h2>Stop Info</h2></span>
+        </div>
+      </section>
+
+<!-- accordian for different sections -->
+      <section class="accordion-master">
+
+        <div class="directions"><h2>Northbound</h2></div>
+        <table>
+          <tr>
+            <th class="line"><h3>Line</h3></th>
+            <th class="destination"><h3>Destination</h3></th>
+            <th class="frequency"><h3>Frequency</h3></th>
+          </tr>
+          <tr>
+            <td class="line"><p>60</p></td>
+            <td class="destination"><p>Randolph/Harbor</p></td>
+            <td class="frequency"><p>Every 20 minutes</p></td>
+          </tr>
+          <tr>
+            <td class="line"><p>124</p></td>
+            <td class="destination"><p>Navy Pier</p></td>
+            <td class="frequency"><p>Every 10 minutes</p></td>
+          </tr>
+        </table>
+
+        <div class="directions"><h2>Eastbound</h2></div>
+        <table>
+          <tr>
+            <th class="line"><h3>Line</h3></th>
+            <th class="destination"><h3>Destination</h3></th>
+            <th class="frequency"><h3>Frequency</h3></th>
+          </tr>
+          <tr>
+            <td class="line"><p>151</p></td>
+            <td class="destination"><p>Devon/Clark</p></td>
+            <td class="frequency"><p>Every 16 minutes</p></td>
+          </tr>
+        </table>
+
+        <div class="directions"><h2>Southbound</h2></div>
+        <table>
+          <tr>
+            <th class="line"><h3>Line</h3></th>
+            <th class="destination"><h3>Destination</h3></th>
+            <th class="frequency"><h3>Frequency</h3></th>
+          </tr>
+          <tr>
+            <td class="line"><p>J14</p></td>
+            <td class="destination"><p>103rd/Stony Island</p></td>
+            <td class="frequency"><p>Every 15 minutes</p></td>
+          </tr>
+          <tr>
+            <td class="line"><p>124</p></td>
+            <td class="destination"><p>Navy Pier</p></td>
+            <td class="frequency"><p>Every 10 minutes</p></td>
+          </tr>
+        </table>
+
+        <div class="directions"><h2>Reroute</h2></div>
+        <table>
+          <tr>
+            <th class="line"><h3>Line</h3></th>
+            <th class="destination"><h3>Destination</h3></th>
+            <th class="frequency"><h3>Frequency</h3></th>
+          </tr>
+          <tr>
+            <td class="line"><p>6x</p></td>
+            <td class="destination"><p>Jackson Park Express</p></td>
+            <td class="frequency"><p>N/A</p></td>
+          </tr>
+        </table>
+
+        <div class="directions"><h2>Out of Service</h2></div>
+          <table>
+            <tr>
+              <th class="line"><h3>Line</h3></th>
+              <th class="destination"><h3>Destination</h3></th>
+              <th class="frequency"><h3>Frequency</h3></th>
+            </tr>
+            <tr>
+              <td class="line"><p>4</p></td>
+              <td class="destination"><p>Cottage Grove</p></td>
+              <td class="frequency"><p>Resumes 12:10am</p></td>
+            </tr>
+            <tr>
+              <td class="line"><p>20</p></td>
+              <td class="destination"><p>Madison</p></td>
+              <td class="frequency"><p>Resumes 12:10am</p></td>
+            </tr>
+            <tr>
+              <td class="line"><p>157</p></td>
+              <td class="destination"><p>Streeterville/Taylor</p></td>
+              <td class="frequency"><p>Resumes 6:00am</p></td>
+            </tr>
+          </table>
+
+      </section>
+
+      <section class="footer-bar">
+        <svg width="360" height="48" viewBox="0 0 360 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V48H360V0H0Z" fill="#2F3E9E"/>
+          <path d="M274 18C274 17.4477 274.448 17 275 17H287C287.552 17 288 17.4477 288 18V30C288 30.5523 287.552 31 287 31H275C274.448 31 274 30.5523 274 30V18Z" stroke="white" stroke-width="2"/>
+          <path d="M187 24C187 27.866 183.866 31 180 31C176.134 31 173 27.866 173 24C173 20.134 176.134 17 180 17C183.866 17 187 20.134 187 24Z" stroke="white" stroke-width="2"/>
+          <path d="M84.4995 16.849C85.1662 16.4636 86 16.9447 86 17.7147V29.2872C86 30.0572 85.1662 30.5383 84.4995 30.1529L74.4904 24.3667C73.8244 23.9817 73.8244 23.0202 74.4904 22.6352L84.4995 16.849Z" stroke="white" stroke-width="2"/>
+        </svg>
+      </section>
+
+    </section>
+  </body>
+</html>
